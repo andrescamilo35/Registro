@@ -1,0 +1,14 @@
+dependencies {
+    implementation project(':model')
+    implementation project(':helper')
+
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.reactivecommons.utils:object-mapper-api:0.1.0'
+
+    runtimeOnly 'com.h2database:h2' // TODO: remove this to use real database
+    testImplementation 'org.reactivecommons.utils:object-mapper:0.1.0'
+
+    implementation 'org.springframework.security:spring-security-crypto:6.2.2'
+
+}
